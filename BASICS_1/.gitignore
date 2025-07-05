@@ -1,9 +1,20 @@
+# Ignore compiled or temp stuff
 /temp/
-*.log
-poms/
-.Work_MapDB/
-.settings/com.oaklandsw.base.projectProps
 target/
 bin/
 class/
 classes/
+*.log
+
+# Talend-specific local state
+.Work_MapDB/
+.settings/com.oaklandsw.base.projectProps
+
+# You CAN track these (don’t ignore them!)
+# DO NOT include these lines:
+# process/
+# metadata/
+# *.item
+# *.properties
+# .project
+# talend.project

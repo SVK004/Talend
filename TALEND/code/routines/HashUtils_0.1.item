@@ -1,0 +1,52 @@
+//package routines;
+//
+///*
+// * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+// * it must be before the "{talendTypes}" key.
+// * 
+// * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+// * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+// * Short
+// * 
+// * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+// * 
+// * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+// * 
+// * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+// * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+// * added. you can have many parameters for the Function.
+// * 
+// * 5. {example} gives a example for the Function. it is optional.
+// */
+//import java.security.MessageDigest;
+//public class HashUtils {
+//
+//    /**
+//     * helloExample: not return value, only print "hello" + message.
+//     * 
+//     * 
+//     * {talendTypes} String
+//     * 
+//     * {Category} User Defined
+//     * 
+//     * {param} string("world") input: The string need to be printed.
+//     * 
+//     * {example} helloExemple("world") # hello world !.
+//     */
+//	public static String rowHash(String customer, String product, int qty, java.util.Date date) {
+//	    String input = String.valueOf(customer) + String.valueOf(product) + qty + String.valueOf(date);
+//	    try {
+//	        MessageDigest md = MessageDigest.getInstance("MD5");
+//	        byte[] messageDigest = md.digest(input.getBytes("UTF-8"));
+//	        StringBuilder hexString = new StringBuilder();
+//	        for (byte b : messageDigest) {
+//	            String hex = Integer.toHexString(0xff & b);
+//	            if (hex.length() == 1) hexString.append('0');
+//	            hexString.append(hex);
+//	        }
+//	        return hexString.toString();
+//	    } catch (Exception e) {
+//	        return null;
+//	    }
+//	}
+//}
